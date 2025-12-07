@@ -1,11 +1,11 @@
 {
-  "name": "claude-skills-marketplace",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "florin-popa-marketplace",
   "owner": {
-    "name": "FlorinPopaCodes",
-    "email": "florin@example.com"
+    "name": "FlorinPopaCodes"
   },
   "metadata": {
-    "description": "Community-curated collection of skills and plugins for Claude Code",
+    "description": "Person  collection of skills and plugins for Claude Code",
     "version": "1.0.0",
     "pluginRoot": "./plugins"
   },
@@ -33,7 +33,13 @@
       },
       "license": "Unlicense",
       "category": "architecture",
-      "keywords": ["architecture", "design", "simplicity", "YAGNI", "decision-framework"],
+      "keywords": [
+        "architecture",
+        "design",
+        "simplicity",
+        "YAGNI",
+        "decision-framework"
+      ],
       "tags": ["featured", "best-practices"]
     }
   ]

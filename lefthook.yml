@@ -1,0 +1,12 @@
+pre-commit:
+  commands:
+    validate-json:
+      glob: "*.json"
+      run: |
+        for file in {staged_files}; do
+          schema=$(jq -r '.["$schema"] // empty' "$file" 2>/dev/null)
+          if [ -n "$schema" ]; then
+            echo "Validating $file against $schema"
+            jv "$schema" "$file" || exit 1
+          fi
+        done
