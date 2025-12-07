@@ -14,21 +14,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - uses: actions/setup-go@v5
+        with:
+          go-version: stable
+          cache: false
+
       - name: Install jv
-        run: |
-          curl -sL https://github.com/santhosh-tekuri/jsonschema/releases/latest/download/jv_linux_amd64.tar.gz | tar xz
-          sudo mv jv /usr/local/bin/
+        run: go install github.com/santhosh-tekuri/jsonschema/cmd/jv@latest
 
       - name: Validate JSON files with schemas
-        run: |
-          failed=0
-          for file in $(find . -name '*.json' -not -path './.git/*'); do
-            schema=$(jq -r '.["$schema"] // empty' "$file" 2>/dev/null)
-            if [ -n "$schema" ]; then
-              echo "Validating $file against $schema"
-              if ! jv "$schema" "$file"; then
-                failed=1
-              fi
-            fi
-          done
-          exit $failed
+        run: ./bin/validate-json

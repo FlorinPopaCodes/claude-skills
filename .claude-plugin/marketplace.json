@@ -1,5 +1,5 @@
 {
-  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "$schema": "../schemas/marketplace.schema.json",
   "name": "florin-popa-marketplace",
   "owner": {
     "name": "FlorinPopaCodes"

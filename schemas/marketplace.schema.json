@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "title": "Claude Code Plugin Marketplace Schema",
+  "description": "Schema for .claude-plugin/marketplace.json files",
+  "type": "object",
+  "required": ["name", "owner", "plugins"],
+  "additionalProperties": false,
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "description": "JSON Schema reference"
+    },
+    "name": {
+      "type": "string",
+      "description": "Marketplace identifier (kebab-case, no spaces)",
+      "pattern": "^[a-z0-9-]+$"
+    },
+    "owner": {
+      "type": "object",
+      "description": "Marketplace maintainer information",
+      "required": ["name"],
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Owner/maintainer name"
+        },
+        "email": {
+          "type": "string",
+          "description": "Owner email address",
+          "format": "email"
+        },
+        "url": {
+          "type": "string",
+          "description": "Owner website or profile URL",
+          "format": "uri"
+        }
+      }
+    },
+    "metadata": {
+      "type": "object",
+      "description": "Optional marketplace metadata",
+      "additionalProperties": false,
+      "properties": {
+        "description": {
+          "type": "string",
+          "description": "Brief marketplace description"
+        },
+        "version": {
+          "type": "string",
+          "description": "Marketplace version (semantic versioning)"
+        },
+        "pluginRoot": {
+          "type": "string",
+          "description": "Base path for relative plugin sources"
+        }
+      }
+    },
+    "plugins": {
+      "type": "array",
+      "description": "List of available plugins",
+      "items": {
+        "type": "object",
+        "required": ["name", "source"],
+        "additionalProperties": false,
+        "properties": {
+          "name": {
+            "type": "string",
+            "description": "Plugin identifier (kebab-case, no spaces)",
+            "pattern": "^[a-z0-9-]+$"
+          },
+          "source": {
+            "oneOf": [
+              {
+                "type": "string",
+                "description": "Relative path to plugin"
+              },
+              {
+                "type": "object",
+                "description": "Plugin source configuration",
+                "required": ["source"],
+                "additionalProperties": false,
+                "properties": {
+                  "source": {
+                    "type": "string",
+                    "enum": ["github", "url"],
+                    "description": "Source type"
+                  },
+                  "repo": {
+                    "type": "string",
+                    "description": "GitHub repository (owner/repo format)"
+                  },
+                  "url": {
+                    "type": "string",
+                    "description": "Git repository URL",
+                    "format": "uri"
+                  }
+                }
+              }
+            ]
+          },
+          "description": {
+            "type": "string",
+            "description": "Brief plugin description"
+          },
+          "version": {
+            "type": "string",
+            "description": "Plugin version"
+          },
+          "author": {
+            "type": "object",
+            "description": "Plugin author information",
+            "additionalProperties": false,
+            "properties": {
+              "name": { "type": "string" },
+              "email": { "type": "string", "format": "email" },
+              "url": { "type": "string", "format": "uri" }
+            }
+          },
+          "homepage": {
+            "type": "string",
+            "format": "uri"
+          },
+          "repository": {
+            "type": "string",
+            "format": "uri"
+          },
+          "license": {
+            "type": "string",
+            "description": "SPDX license identifier"
+          },
+          "keywords": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "category": {
+            "type": "string"
+          },
+          "tags": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "strict": {
+            "type": "boolean",
+            "default": true
+          },
+          "commands": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "array", "items": { "type": "string" } }
+            ]
+          },
+          "agents": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "array", "items": { "type": "string" } }
+            ]
+          },
+          "hooks": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "object" }
+            ]
+          },
+          "mcpServers": {
+            "oneOf": [
+              { "type": "string" },
+              { "type": "object" }
+            ]
+          }
+        }
+      }
+    }
+  }
+}
