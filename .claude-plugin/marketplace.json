@@ -1,0 +1,40 @@
+{
+  "name": "claude-skills-marketplace",
+  "owner": {
+    "name": "FlorinPopaCodes",
+    "email": "florin@example.com"
+  },
+  "metadata": {
+    "description": "Community-curated collection of skills and plugins for Claude Code",
+    "version": "1.0.0",
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "always-works-testing",
+      "source": "./plugins/always-works-testing",
+      "description": "Default testing standard for all implementation work - ensures code actually works through mandatory execution validation before confirming to user.",
+      "version": "1.0.0",
+      "author": {
+        "name": "FlorinPopaCodes"
+      },
+      "license": "Unlicense",
+      "category": "testing",
+      "keywords": ["testing", "validation", "quality", "verification", "TDD"],
+      "tags": ["featured", "beginner-friendly"]
+    },
+    {
+      "name": "simplicity-architect",
+      "source": "./plugins/simplicity-architect",
+      "description": "Architecture guide for choosing simple, maintainable solutions over complex ones. Applies simplicity-first and YAGNI principles with concrete decision frameworks.",
+      "version": "1.0.0",
+      "author": {
+        "name": "FlorinPopaCodes"
+      },
+      "license": "Unlicense",
+      "category": "architecture",
+      "keywords": ["architecture", "design", "simplicity", "YAGNI", "decision-framework"],
+      "tags": ["featured", "best-practices"]
+    }
+  ]
+}

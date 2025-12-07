@@ -1,0 +1,11 @@
+{
+  "name": "always-works-testing",
+  "description": "Default testing standard for all implementation work - ensures code actually works through mandatory execution validation before confirming to user.",
+  "version": "1.0.0",
+  "author": {
+    "name": "FlorinPopaCodes"
+  },
+  "license": "Unlicense",
+  "repository": "https://github.com/FlorinPopaCodes/claude-skills",
+  "skills": ["./SKILL.md"]
+}
