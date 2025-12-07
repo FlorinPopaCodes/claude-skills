@@ -27,7 +27,7 @@ If any answer is NO or UNCERTAIN → Test before confirming to user.
 
 ## Forbidden Phrases
 
-NEVER use these without actual verification:
+Don't use these without actual verification:
 
 - "This should work now"
 - "I've fixed the issue" (especially on 2nd+ attempt)
@@ -87,7 +87,7 @@ If you cannot perform complete verification (no access to prod environment, miss
 
 - **Explicitly state the limitation** to the user
 - **List what you verified** and what you couldn't
-- **Never imply full verification** when only partial testing occurred
+- **Don't imply full verification** when only partial testing occurred
 - **Recommend what the user should test** before deploying
 
 Example: "I've verified the syntax and logic structure, but I cannot test the actual API calls without credentials. You should test: [specific scenarios]"

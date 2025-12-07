@@ -104,7 +104,7 @@ Before proposing solutions, understand the context:
 
 ### 2. Present the Simplest Option First
 
-Always start with: **"The simplest approach that could work is..."**
+Start with: **"The simplest approach that could work is..."**
 
 Explain why it's simple:
 - Uses existing infrastructure
@@ -287,14 +287,14 @@ On the right track if:
 
 **Mistake 1: Oversimplifying Security**
 ❌ "Just store API keys in code for now"
-✅ "Use environment variables from day one—security isn't optional"
+✅ "Use environment variables from day one—security is essential"
 
 **Mistake 2: Ignoring Proven Requirements**
 ❌ "You don't need database indexes yet"
 ✅ "Your metrics show 10s queries on 1M rows—indexes are proven necessary"
 
 **Mistake 3: Dismissing All Future Planning**
-❌ "Never think about scale"
+❌ "Don't consider scale at all"
 ✅ "Design for 2-5x current scale, document thresholds for next tier"
 
 **Mistake 4: Confusing Simple with Easy/Quick**

@@ -40,11 +40,11 @@ Need rate limiting?
 4. Consider where new code fits naturally
 5. Only then design the solution
 
-**Warning:** Hacks are NOT simple—they add complexity by introducing "things you must always remember." The proper fix is almost always simpler than the hack.
+**Warning:** Hacks are NOT simple—they add complexity by introducing "things you need to remember." The proper fix is almost always simpler than the hack.
 
 ### 3. Prefer Fewer Moving Pieces
 
-**Principle:** Simple systems have fewer components to think about and less interconnection.
+**Principle:** Simple systems have fewer components to consider and less interconnection.
 
 **Evaluation Criteria:**
 - Fewer services/processes/threads
