@@ -1,0 +1,15 @@
+{
+  "name": "cognitive-load",
+  "version": "1.0.0",
+  "description": "Cornerstone plugin applying cognitive load principles to reduce mental burden in code - humans hold ~4 chunks in working memory",
+  "author": {
+    "name": "Florin Popa",
+    "url": "https://github.com/FlorinPopaCodes"
+  },
+  "inspiration": {
+    "article": "Cognitive Load in Software Development",
+    "author": "Artem Zakirullin",
+    "url": "https://github.com/zakirullin/cognitive-load"
+  },
+  "keywords": ["cognitive-load", "complexity", "readability", "code-review", "mental-model"]
+}

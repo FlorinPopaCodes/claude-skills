@@ -43,6 +43,20 @@
         "philosophy"
       ],
       "tags": ["featured", "cornerstone", "best-practices"]
+    },
+    {
+      "name": "cognitive-load",
+      "source": "./plugins/cognitive-load",
+      "description": "Cornerstone plugin applying cognitive load principles to reduce mental burden in code. Humans hold ~4 chunks in working memory - this skill helps minimize extraneous cognitive load. Inspired by Artem Zakirullin's guide.",
+      "version": "1.0.0",
+      "author": {
+        "name": "FlorinPopaCodes"
+      },
+      "homepage": "https://github.com/zakirullin/cognitive-load",
+      "license": "Unlicense",
+      "category": "code-quality",
+      "keywords": ["cognitive-load", "complexity", "readability", "code-review", "mental-model"],
+      "tags": ["featured", "cornerstone", "best-practices"]
     }
   ]
 }
