@@ -1,0 +1,12 @@
+{
+  "name": "rails-codegen",
+  "version": "1.0.0",
+  "description": "Rails code generation standards based on Evil Martians' AGENTS.md by @palkan. Ensures AI-generated Rails code follows conventions and remains maintainable.",
+  "author": {
+    "name": "Evil Martians",
+    "url": "https://evilmartians.com"
+  },
+  "repository": "https://gist.github.com/palkan/482010bd6ec434685f106779e863d0ef",
+  "license": "MIT",
+  "keywords": ["rails", "ruby", "codegen", "conventions", "best-practices"]
+}
