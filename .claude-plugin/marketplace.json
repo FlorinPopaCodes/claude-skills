@@ -24,23 +24,25 @@
       "tags": ["featured", "beginner-friendly"]
     },
     {
-      "name": "simplicity-architect",
-      "source": "./plugins/simplicity-architect",
-      "description": "Architecture guide for choosing simple, maintainable solutions over complex ones. Applies simplicity-first and YAGNI principles with concrete decision frameworks.",
+      "name": "simplicity-first",
+      "source": "./plugins/simplicity-first",
+      "description": "Cornerstone plugin embedding the 'simplest thing that could possibly work' philosophy into ALL development tasks. YAGNI as supreme principle - design for now, not imagined futures. Inspired by Sean Goedecke's article.",
       "version": "1.0.0",
       "author": {
         "name": "FlorinPopaCodes"
       },
+      "homepage": "https://www.seangoedecke.com/the-simplest-thing-that-could-possibly-work/",
       "license": "Unlicense",
       "category": "architecture",
       "keywords": [
-        "architecture",
-        "design",
         "simplicity",
         "YAGNI",
-        "decision-framework"
+        "architecture",
+        "design",
+        "cornerstone",
+        "philosophy"
       ],
-      "tags": ["featured", "best-practices"]
+      "tags": ["featured", "cornerstone", "best-practices"]
     }
   ]
 }

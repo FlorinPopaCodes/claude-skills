@@ -1,0 +1,15 @@
+{
+  "name": "simplicity-first",
+  "version": "1.0.0",
+  "description": "Cornerstone plugin embedding the 'simplest thing that could possibly work' philosophy into all development tasks",
+  "author": {
+    "name": "Florin Popa",
+    "url": "https://github.com/FlorinPopaCodes"
+  },
+  "inspiration": {
+    "article": "The Simplest Thing That Could Possibly Work",
+    "author": "Sean Goedecke",
+    "url": "https://www.seangoedecke.com/the-simplest-thing-that-could-possibly-work/"
+  },
+  "keywords": ["simplicity", "yagni", "design", "architecture", "cornerstone"]
+}
