@@ -1,10 +1,6 @@
 ---
 name: Cognitive Load
-description: >
-  This skill should be used when the user asks to "implement", "build", "create", "add feature",
-  "develop", "design", "architect", "plan", "structure", "refactor", "improve", "optimize",
-  "review", "fix", "solve", "handle", "debug", or discusses implementation strategies.
-  Apply cognitive load principles to ALL development work as a cornerstone principle.
+description: This skill should be used when the user asks to "implement", "build", "create", "add feature", "develop", "design", "architect", "plan", "structure", "refactor", "improve", "optimize", "review", "fix", "solve", "handle", "debug", or discusses implementation strategies. Apply cognitive load principles to ALL development work as a cornerstone principle.
 version: 1.0.0
 ---
 

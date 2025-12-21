@@ -1,10 +1,6 @@
 ---
 name: Simplicity First
-description: >
-  This skill should be used when the user asks to "implement", "build", "create", "add feature",
-  "develop", "design", "architect", "plan", "structure", "refactor", "improve", "optimize",
-  "fix", "solve", "handle", "choose between", "which approach", or discusses implementation
-  strategies. Apply this philosophy to ALL development work as a cornerstone principle.
+description: This skill should be used when the user asks to "implement", "build", "create", "add feature", "develop", "design", "architect", "plan", "structure", "refactor", "improve", "optimize", "fix", "solve", "handle", "choose between", "which approach", or discusses implementation strategies. Apply this philosophy to ALL development work as a cornerstone principle.
 version: 1.0.0
 ---
 
