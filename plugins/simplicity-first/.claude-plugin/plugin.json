@@ -6,10 +6,7 @@
     "name": "Florin Popa",
     "url": "https://github.com/FlorinPopaCodes"
   },
-  "inspiration": {
-    "article": "The Simplest Thing That Could Possibly Work",
-    "author": "Sean Goedecke",
-    "url": "https://www.seangoedecke.com/the-simplest-thing-that-could-possibly-work/"
-  },
+  "license": "Unlicense",
+  "repository": "https://github.com/FlorinPopaCodes/claude-skills",
   "keywords": ["simplicity", "yagni", "design", "architecture", "cornerstone"]
 }

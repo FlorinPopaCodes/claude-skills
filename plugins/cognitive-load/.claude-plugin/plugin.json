@@ -6,10 +6,7 @@
     "name": "Florin Popa",
     "url": "https://github.com/FlorinPopaCodes"
   },
-  "inspiration": {
-    "article": "Cognitive Load in Software Development",
-    "author": "Artem Zakirullin",
-    "url": "https://github.com/zakirullin/cognitive-load"
-  },
+  "license": "Unlicense",
+  "repository": "https://github.com/FlorinPopaCodes/claude-skills",
   "keywords": ["cognitive-load", "complexity", "readability", "code-review", "mental-model"]
 }
