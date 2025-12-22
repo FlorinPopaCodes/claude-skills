@@ -1,5 +1,4 @@
 {
-  "$schema": "../schemas/marketplace.schema.json",
   "name": "florin-popa-marketplace",
   "owner": {
     "name": "FlorinPopaCodes"
