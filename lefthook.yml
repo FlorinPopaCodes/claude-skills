@@ -1,5 +1,4 @@
 pre-commit:
   commands:
-    validate-json:
-      glob: "*.json"
-      run: ./bin/validate-json {staged_files}
+    claudelint:
+      run: docker run --rm -v $(pwd):/workspace -w /workspace ghcr.io/stbenjam/claudelint:latest --strict
