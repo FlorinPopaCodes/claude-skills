@@ -47,7 +47,7 @@ Rails code generation standards based on Evil Martians' AGENTS.md. Ensures AI-ge
 Add this marketplace to Claude Code:
 
 ```bash
-/plugin marketplace FlorinPopaCodes/claude-skills
+/plugin marketplace FlorinPopaCodes/claude-marketplace
 ```
 
 Then install individual plugins as needed.
