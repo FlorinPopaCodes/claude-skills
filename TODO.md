@@ -1,0 +1,2 @@
+- [ ] turn always-works-testing into hooks
+- [ ] turn simplicity-first into hooks

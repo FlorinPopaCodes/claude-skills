@@ -1,13 +1,23 @@
 {
   "permissions": {
     "allow": [
+      "Bash(claude:*)",
+
       "Skill(plugin-dev:agent-development)",
       "Skill(plugin-dev:command-development)",
       "Skill(plugin-dev:hook-development)",
       "Skill(plugin-dev:mcp-integration)",
       "Skill(plugin-dev:plugin-settings)",
       "Skill(plugin-dev:plugin-structure)",
-      "Skill(plugin-dev:skill-development)"
+      "Skill(plugin-dev:skill-development)",
+
+      "WebFetch(domain:developers.cloudflare.com)",
+      "WebFetch(domain:code.claude.com)",
+      "WebFetch(domain:github.com)"
     ]
+  },
+  "sandbox": {
+    "enabled": true,
+    "autoAllowBashIfSandboxed": true
   }
 }
