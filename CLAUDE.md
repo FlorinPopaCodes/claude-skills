@@ -1,0 +1,1 @@
+- Create new plugins in ./plugins/{plugin-name}.
