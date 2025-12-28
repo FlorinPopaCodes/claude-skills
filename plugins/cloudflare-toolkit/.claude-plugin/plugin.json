@@ -1,0 +1,21 @@
+{
+  "name": "cloudflare-toolkit",
+  "version": "1.0.0",
+  "description": "Comprehensive Cloudflare MCP integration with skills for documentation search, workers bindings management, build monitoring, observability, and DNS analytics",
+  "author": {
+    "name": "Florin Popa",
+    "url": "https://github.com/FlorinPopaCodes"
+  },
+  "license": "Unlicense",
+  "repository": "https://github.com/FlorinPopaCodes/claude-skills",
+  "keywords": [
+    "cloudflare",
+    "workers",
+    "mcp",
+    "kv",
+    "r2",
+    "d1",
+    "observability",
+    "dns"
+  ]
+}

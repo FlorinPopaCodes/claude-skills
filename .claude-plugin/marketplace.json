@@ -71,6 +71,20 @@
       "category": "frameworks",
       "keywords": ["rails", "ruby", "codegen", "conventions", "best-practices"],
       "tags": ["featured", "ruby", "web-development"]
+    },
+    {
+      "name": "cloudflare-toolkit",
+      "source": "./plugins/cloudflare-toolkit",
+      "description": "Comprehensive Cloudflare MCP integration with skills for documentation search, workers bindings management, build monitoring, observability, and DNS analytics.",
+      "version": "1.0.0",
+      "author": {
+        "name": "FlorinPopaCodes"
+      },
+      "homepage": "https://github.com/cloudflare/mcp-server-cloudflare",
+      "license": "Unlicense",
+      "category": "integrations",
+      "keywords": ["cloudflare", "workers", "mcp", "kv", "r2", "d1", "observability", "dns"],
+      "tags": ["featured", "cloud", "infrastructure"]
     }
   ]
 }
